@@ -115,7 +115,7 @@ section {
     max-width: 600px;
     font-size: 0.95rem;
     line-height: 1.5;
-    margin: 0 auto 30px auto; /* Tengah secara horizontal */
+    margin: 0 0 30px 0; /* Tengah secara horizontal */
 }
 
 /* Tombol Capsule / Pill Style (Persis Gambar) */
