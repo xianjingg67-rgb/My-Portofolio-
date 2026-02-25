@@ -7,7 +7,6 @@
     <!-- CSS Internal untuk keamanan agar langsung jalan -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
@@ -38,7 +37,7 @@
             
             <!-- Deskripsi Persis Seperti Gambar -->
             <p class="hero-desc">
-                Video Editor & Graphic Designer 
+                Pengembang aplikasi dan web yang berfokus pada desain modern, performa tinggi, dan solusi berbasis teknologi terkini. Berpengalaman membangun aplikasi mobile, website interaktif, serta mengintegrasikan AI dan Machine Learning untuk menciptakan solusi masa depan.
             </p>
             
             <!-- Tombol Persis Seperti Gambar -->
@@ -58,7 +57,7 @@
         <!-- About Section -->
         <section id="about">
     <div class="about-card">
-        <div class="about-left">
+        <div class="about-content">
             <h2 class="about-title">About Me</h2>
             <p class="about-text">
                 I'm <strong>Lukman Al Khakim</strong>, a full-stack developer passionate about building modern, high-performance applications with an intuitive user experience.
@@ -66,18 +65,18 @@
             
             <div class="about-stats">
                 <div class="stat-item">
-                    <h3>4+</h3>
+                    <h3>20+</h3>
                     <p>Project Finished</p>
                 </div>
                 <div class="stat-item">
-                    <h3>1+</h3>
+                    <h3>3+</h3>
                     <p>Years of Experience</p>
                 </div>
             </div>
             <p class="stat-subtext">Working with heart, creating with mind.</p>
-        <div
+        </div>
 
-       <!-- Kartu Profil Kecil di Kanan -->
+        <!-- Kartu Profil Kecil di Kanan -->
         <div class="profile-mini-card">
             <div class="profile-img-container">
                 <img src="https://via.placeholder.com" alt="Profile">
@@ -96,7 +95,7 @@
             <h2 class="title">Projects</h2>
             <div class="grid">
                 <div class="card"><h3>Web Design</h3><p>Membangun antarmuka modern.</p></div>
-                <div class="card"><h3>App Dev</h3><p>Game 2dimensi yang absurd.</p></div>
+                <div class="card"><h3>App Dev</h3><p>Aplikasi mobile responsif.</p></div>
             </div>
         </section>
 
@@ -104,7 +103,7 @@
         <section id="certificate">
             <h2 class="title">Certificates</h2>
             <div class="grid">
-                <img src="certif1.jpg" class="img-item" alt="Cert 1">
+                <img src="https://via.placeholder.com" class="img-item" alt="Cert 1">
                 <img src="https://via.placeholder.com" class="img-item" alt="Cert 2">
             </div>
         </section>
@@ -124,7 +123,7 @@
 
         <!-- Kotak Kecil -->
         <div class="bento-item">
-            <img src="certif2.jpg" alt="Project 2">
+            <img src="project2.jpg" alt="Project 2">
             <div class="overlay">
                 <h3>Web Wedding</h3>
                 <p>TailwindCSS</p>
@@ -148,18 +147,11 @@
         <!-- Contact Section -->
         <section id="contact">
             <h2 class="title">Social Media</h2>
-            <div class="social-links">
-    <a href="https://instagram.com/lukman_akh" target="_blank">
-        <i class="fab fa-instagram"></i>
-    </a>
-
-    <a href="https://wa.me/6288217278475" target="_blank">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-
-    <a href="https://tiktok.com/@lukman_akh" target="_blank">
-        <i class="fab fa-tiktok"></i>
-    </a>
+            <div class="social-container">
+                <div class="social-card" onclick="openSocial('instagram')"><i class="fab fa-instagram"></i><span>Instagram</span></div>
+                <div class="social-card" onclick="openSocial('tiktok')"><i class="fab fa-tiktok"></i><span>TikTok</span></div>
+                <div class="social-card" onclick="openSocial('facebook')"><i class="fab fa-facebook"></i><span>Facebook</span></div>
+                <div class="social-card" onclick="openSocial('whatsapp')"><i class="fab fa-whatsapp"></i><span>WhatsApp</span></div>
             </div>
         </section>
     </main>
