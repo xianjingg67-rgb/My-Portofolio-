@@ -20,24 +20,12 @@ function handleTyping() {
 
     if (!isDeleting && charIndex === textToType.length) {
         isDeleting = true;
-        typingSpeed = 2000; // Jeda saat selesai mengetik
+        typingSpeed = 2000;
     } else if (isDeleting && charIndex === 0) {
         isDeleting = false;
         typingSpeed = 500;
     }
-
     setTimeout(handleTyping, typingSpeed);
-}
-
-// --- NAVIGASI HALAMAN ---
-function showSection(sectionId) {
-    const sections = document.querySelectorAll('section');
-    sections.forEach(sec => sec.classList.remove('active'));
-    
-    document.getElementById(sectionId).classList.add('active');
-    
-    // Scroll ke atas otomatis saat ganti halaman
-    window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 // --- LINK SOSIAL MEDIA ---
@@ -48,13 +36,7 @@ function openSocial(platform) {
         'facebook': 'https://facebook.com',
         'whatsapp': 'https://wa.me'
     };
-    
-    if (urls[platform]) {
-        window.open(urls[platform], '_blank');
-    }
+    if (urls[platform]) window.open(urls[platform], '_blank');
 }
 
-// Jalankan animasi saat window dimuat
-window.onload = () => {
-    handleTyping();
-};
+window.onload = handleTyping;
