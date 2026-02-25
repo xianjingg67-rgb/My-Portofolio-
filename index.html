@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio | Lukman Al Khakim</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Icon Social Media -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Portofolio</div>
+        <ul class="nav-links">
+            <li><a href="#" onclick="showSection('home')">Home</a></li>
+            <li><a href="#" onclick="showSection('about')">About</a></li>
+            <li><a href="#" onclick="showSection('project')">Project</a></li>
+            <li><a href="#" onclick="showSection('certificate')">Certificate</a></li>
+            <li><a href="#" onclick="showSection('gallery')">Gallery</a></li>
+            <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="active">
+            <div class="hero">
+                <p class="greeting">"Avoid or just undertake it"</p>
+                <h1>Hi I'm <span id="typing"></span></h1>
+                <p class="description">Pengembang aplikasi dan web yang berfokus pada desain modern, performa tinggi, dan solusi berbasis teknologi terkini.</p>
+                <div class="cta-buttons">
+                    <button class="btn primary" onclick="showSection('contact')">Contact Me</button>
+                    <button class="btn secondary" onclick="showSection('project')">Explore Projects</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section placeholders -->
+        <section id="about"><h1>About Me</h1><p>Halo! Saya Lukman, seorang pengembang yang bersemangat dalam dunia teknologi.</p></section>
+        <section id="project"><h1>My Projects</h1><p>Daftar proyek yang telah saya kerjakan akan muncul di sini.</p></section>
+        <section id="certificate"><h1>Certificates</h1><p>Koleksi sertifikat keahlian saya.</p></section>
+        <section id="gallery"><h1>Gallery</h1><p>Dokumentasi visual perjalanan karir saya.</p></section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h1>Get In Touch</h1>
+            <div class="social-container">
+                <div class="social-card" onclick="openSocial('instagram')">
+                    <i class="fab fa-instagram"></i>
+                    <span>Instagram</span>
+                </div>
+                <div class="social-card" onclick="openSocial('tiktok')">
+                    <i class="fab fa-tiktok"></i>
+                    <span>TikTok</span>
+                </div>
+                <div class="social-card" onclick="openSocial('facebook')">
+                    <i class="fab fa-facebook"></i>
+                    <span>Facebook</span>
+                </div>
+                <div class="social-card" onclick="openSocial('whatsapp')">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>WhatsApp</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
