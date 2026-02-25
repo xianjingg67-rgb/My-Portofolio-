@@ -14,33 +14,69 @@ body {
     color: white;
 }
 
-/* Navbar Tetap Muncul */
+/* Navigasi Mengambang (Floating Glassmorphism) */
 nav {
     display: flex;
     justify-content: space-between;
-    padding: 20px 8%;
-    background: rgba(11, 15, 26, 0.95);
+    align-items: center;
+    
+    /* Posisi Mengambang */
     position: fixed;
-    width: 100%;
-    top: 0;
+    top: 20px; /* Jarak dari atas */
+    left: 50%;
+    transform: translateX(-50%); /* Mengetengahkan navbar */
+    width: 90%; /* Lebar navbar */
+    max-width: 1000px;
     z-index: 1000;
-    border-bottom: 1px solid #1e293b;
+
+    /* Desain Visual */
+    padding: 15px 30px;
+    background: rgba(255, 255, 255, 0.05); /* Transparan putih tipis */
+    backdrop-filter: blur(15px); /* Efek Blur Kaca */
+    -webkit-backdrop-filter: blur(15px); /* Support Safari */
+    border-radius: 50px; /* Membuat Rounded sempurna */
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Garis tepi tipis */
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37); /* Bayangan halus */
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #fff;
+    letter-spacing: 1px;
 }
 
 .nav-links {
     display: flex;
     list-style: none;
-    gap: 20px;
+    gap: 25px;
+    align-items: center;
 }
 
 .nav-links a {
     text-decoration: none;
-    color: #94a3b8;
-    font-size: 14px;
+    color: #cbd5e1; /* Warna teks abu-abu terang */
+    font-size: 0.9rem;
+    font-weight: 500;
     transition: 0.3s;
 }
 
-.nav-links a:hover { color: #38bdf8; }
+.nav-links a:hover {
+    color: #fff; /* Teks jadi putih saat hover */
+}
+
+/* Tambahkan icon dark mode jika perlu seperti di gambar */
+.dark-mode-toggle {
+    color: #fff;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/* Pastikan section utama tidak tertutup navbar */
+main {
+    margin-top: 100px;
+}
+
 
 /* Sections */
 section {
