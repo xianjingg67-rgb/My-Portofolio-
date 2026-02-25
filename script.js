@@ -1,42 +1,41 @@
 // --- ANIMASI MENGETIK ---
-const textToType = "Lukman Al Khakim";
-let charIndex = 0;
-let isDeleting = false;
-let typingSpeed = 150;
+const text = "Lukman Al Khakim";
+let i = 0;
+let deleting = false;
 
-function handleTyping() {
+function playTyping() {
     const target = document.getElementById("typing");
     if (!target) return;
 
-    if (!isDeleting) {
-        target.innerHTML = textToType.substring(0, charIndex + 1);
-        charIndex++;
-        typingSpeed = 150;
+    if (!deleting) {
+        target.innerHTML = text.slice(0, i + 1);
+        i++;
     } else {
-        target.innerHTML = textToType.substring(0, charIndex - 1);
-        charIndex--;
-        typingSpeed = 100;
+        target.innerHTML = text.slice(0, i - 1);
+        i--;
     }
 
-    if (!isDeleting && charIndex === textToType.length) {
-        isDeleting = true;
-        typingSpeed = 2000;
-    } else if (isDeleting && charIndex === 0) {
-        isDeleting = false;
-        typingSpeed = 500;
+    if (i === text.length) {
+        deleting = true;
+        setTimeout(playTyping, 2000);
+    } else if (i === 0) {
+        deleting = false;
+        setTimeout(playTyping, 500);
+    } else {
+        setTimeout(playTyping, deleting ? 100 : 150);
     }
-    setTimeout(handleTyping, typingSpeed);
 }
 
-// --- LINK SOSIAL MEDIA ---
-function openSocial(platform) {
-    const urls = {
+// --- FUNGSI SOSIAL MEDIA ---
+function openSocial(name) {
+    const links = {
         'instagram': 'https://instagram.com',
         'tiktok': 'https://tiktok.com',
         'facebook': 'https://facebook.com',
         'whatsapp': 'https://wa.me'
     };
-    if (urls[platform]) window.open(urls[platform], '_blank');
+    window.open(links[name], '_blank');
 }
 
-window.onload = handleTyping;
+// Start
+document.addEventListener("DOMContentLoaded", playTyping);
