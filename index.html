@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio | Lukman Al Khakim</title>
+    <!-- CSS Internal untuk keamanan agar langsung jalan -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com">
 </head>
 <body>
 
+    <!-- Navigasi -->
     <nav>
         <div class="logo">Portofolio</div>
         <ul class="nav-links">
@@ -21,6 +23,7 @@
         </ul>
     </nav>
 
+    <!-- Konten Utama -->
     <main>
         <!-- Home Section -->
         <section id="home">
@@ -28,56 +31,55 @@
                 <div class="hero-text">
                     <p class="greeting">"Avoid or just undertake it"</p>
                     <h1>Hi I'm <span id="typing"></span></h1>
-                    <p class="description">Pengembang aplikasi dan web yang berfokus pada desain modern dan performa tinggi.</p>
+                    <p class="description">Pengembang aplikasi dan web yang berfokus pada desain modern, performa tinggi, dan solusi berbasis teknologi terkini.</p>
                     <div class="cta-buttons">
                         <a href="#contact" class="btn primary">Contact Me</a>
-                        <a href="#project" class="btn secondary">Explore Projects</a>
+                        <a href="#project" class="btn secondary">My Projects</a>
                     </div>
                 </div>
-                <!-- Foto Profil -->
                 <div class="hero-image">
-                    <img src="https://via.placeholder.com" alt="Lukman Al Khakim">
+                    <!-- Ganti URL ini dengan foto profilmu -->
+                    <img src="https://via.placeholder.com" alt="Profile">
                 </div>
             </div>
         </section>
 
         <!-- About Section -->
         <section id="about">
-            <h2 class="section-title">About Me</h2>
-            <p>Saya adalah seorang pengembang yang berdedikasi tinggi...</p>
+            <h2 class="title">About Me</h2>
+            <p>Halo! Saya Lukman Al Khakim, seorang pengembang yang bersemangat menciptakan solusi digital yang inovatif dan user-friendly.</p>
         </section>
 
         <!-- Project Section -->
         <section id="project">
-            <h2 class="section-title">My Projects</h2>
-            <div class="grid-container">
-                <div class="card"><h3>Project 1</h3><p>Deskripsi singkat proyek.</p></div>
-                <div class="card"><h3>Project 2</h3><p>Deskripsi singkat proyek.</p></div>
+            <h2 class="title">Projects</h2>
+            <div class="grid">
+                <div class="card"><h3>Web Design</h3><p>Membangun antarmuka modern.</p></div>
+                <div class="card"><h3>App Dev</h3><p>Aplikasi mobile responsif.</p></div>
             </div>
         </section>
 
         <!-- Certificate Section -->
         <section id="certificate">
-            <h2 class="section-title">Certificates</h2>
-            <div class="grid-container">
-                <img src="https://via.placeholder.com" alt="Sertifikat 1" class="img-item">
-                <img src="https://via.placeholder.com" alt="Sertifikat 2" class="img-item">
+            <h2 class="title">Certificates</h2>
+            <div class="grid">
+                <img src="https://via.placeholder.com" class="img-item" alt="Cert 1">
+                <img src="https://via.placeholder.com" class="img-item" alt="Cert 2">
             </div>
         </section>
 
         <!-- Gallery Section -->
         <section id="gallery">
-            <h2 class="section-title">Gallery</h2>
-            <div class="grid-container">
-                <img src="https://via.placeholder.com" alt="Foto 1" class="img-item rounded">
-                <img src="https://via.placeholder.com" alt="Foto 2" class="img-item rounded">
-                <img src="https://via.placeholder.com" alt="Foto 3" class="img-item rounded">
+            <h2 class="title">Gallery</h2>
+            <div class="grid">
+                <img src="https://via.placeholder.com" class="img-item rounded" alt="Gal 1">
+                <img src="https://via.placeholder.com" class="img-item rounded" alt="Gal 2">
             </div>
         </section>
 
         <!-- Contact Section -->
         <section id="contact">
-            <h2 class="section-title">Contact</h2>
+            <h2 class="title">Social Media</h2>
             <div class="social-container">
                 <div class="social-card" onclick="openSocial('instagram')"><i class="fab fa-instagram"></i><span>Instagram</span></div>
                 <div class="social-card" onclick="openSocial('tiktok')"><i class="fab fa-tiktok"></i><span>TikTok</span></div>
