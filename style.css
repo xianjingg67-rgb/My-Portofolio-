@@ -364,6 +364,125 @@ h1 {
     .nav-links { display: none; } /* Sembunyikan menu di mobile demi kesederhanaan */
 }
 
+/* --- CONTACT & CHAT STYLES --- */
+#contact-chat {
+    text-align: center;
+    padding: 100px 8%;
+}
+
+.section-subtitle {
+    color: #94a3b8;
+    margin-bottom: 40px;
+    font-size: 0.9rem;
+}
+
+.contact-chat-wrapper {
+    display: flex;
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Chat Styling */
+.chat-container {
+    flex: 1;
+    background: #0d0d15;
+    border: 1px solid #1e293b;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+    overflow: hidden;
+}
+
+.chat-header {
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.03);
+    border-bottom: 1px solid #1e293b;
+    text-align: left;
+    font-weight: bold;
+    color: #38bdf8;
+}
+
+.chat-body {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    overflow-y: auto;
+}
+
+.msg {
+    padding: 10px 15px;
+    border-radius: 12px;
+    max-width: 80%;
+    font-size: 0.85rem;
+    text-align: left;
+}
+
+.msg-info { font-size: 0.7rem; color: #38bdf8; margin-bottom: 4px; font-weight: bold; }
+.msg.received { background: rgba(56, 189, 248, 0.1); align-self: flex-start; }
+.msg.sent { background: rgba(255, 255, 255, 0.05); align-self: flex-end; }
+
+.chat-footer { padding: 20px; border-top: 1px solid #1e293b; }
+.btn-google {
+    width: 100%;
+    padding: 10px;
+    background: white;
+    border-radius: 50px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-google img { width: 18px; }
+.login-note { font-size: 0.7rem; color: #64748b; margin-top: 10px; }
+
+/* Form Styling */
+.form-container {
+    flex: 1;
+    background: #0d0d15;
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid #1e293b;
+    text-align: left;
+}
+
+.form-group { margin-bottom: 20px; }
+.form-group label { display: block; margin-bottom: 8px; font-size: 0.9rem; color: #94a3b8; }
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid #1e293b;
+    border-radius: 10px;
+    color: white;
+    outline: none;
+}
+
+.form-group textarea { height: 120px; resize: none; }
+
+.btn-send-disabled {
+    width: 100%;
+    padding: 12px;
+    background: #1e1e2e;
+    color: #4b5563;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: not-allowed;
+}
+
+/* Responsive Mobile */
+@media (max-width: 850px) {
+    .contact-chat-wrapper { flex-direction: column; }
+}
+
 /* ===== SOCIAL ICON HERO ===== */
 .social-links {
     margin-top: 25px;
