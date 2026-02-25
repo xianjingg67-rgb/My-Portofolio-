@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio | Lukman Al Khakim</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Icon Social Media -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com">
 </head>
 <body>
@@ -13,55 +12,77 @@
     <nav>
         <div class="logo">Portofolio</div>
         <ul class="nav-links">
-            <li><a href="#" onclick="showSection('home')">Home</a></li>
-            <li><a href="#" onclick="showSection('about')">About</a></li>
-            <li><a href="#" onclick="showSection('project')">Project</a></li>
-            <li><a href="#" onclick="showSection('certificate')">Certificate</a></li>
-            <li><a href="#" onclick="showSection('gallery')">Gallery</a></li>
-            <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#certificate">Certificate</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
     <main>
         <!-- Home Section -->
-        <section id="home" class="active">
-            <div class="hero">
-                <p class="greeting">"Avoid or just undertake it"</p>
-                <h1>Hi I'm <span id="typing"></span></h1>
-                <p class="description">Pengembang aplikasi dan web yang berfokus pada desain modern, performa tinggi, dan solusi berbasis teknologi terkini.</p>
-                <div class="cta-buttons">
-                    <button class="btn primary" onclick="showSection('contact')">Contact Me</button>
-                    <button class="btn secondary" onclick="showSection('project')">Explore Projects</button>
+        <section id="home">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="greeting">"Avoid or just undertake it"</p>
+                    <h1>Hi I'm <span id="typing"></span></h1>
+                    <p class="description">Pengembang aplikasi dan web yang berfokus pada desain modern dan performa tinggi.</p>
+                    <div class="cta-buttons">
+                        <a href="#contact" class="btn primary">Contact Me</a>
+                        <a href="#project" class="btn secondary">Explore Projects</a>
+                    </div>
+                </div>
+                <!-- Foto Profil -->
+                <div class="hero-image">
+                    <img src="https://via.placeholder.com" alt="Lukman Al Khakim">
                 </div>
             </div>
         </section>
 
-        <!-- Section placeholders -->
-        <section id="about"><h1>About Me</h1><p>Halo! Saya Lukman, seorang pengembang yang bersemangat dalam dunia teknologi.</p></section>
-        <section id="project"><h1>My Projects</h1><p>Daftar proyek yang telah saya kerjakan akan muncul di sini.</p></section>
-        <section id="certificate"><h1>Certificates</h1><p>Koleksi sertifikat keahlian saya.</p></section>
-        <section id="gallery"><h1>Gallery</h1><p>Dokumentasi visual perjalanan karir saya.</p></section>
+        <!-- About Section -->
+        <section id="about">
+            <h2 class="section-title">About Me</h2>
+            <p>Saya adalah seorang pengembang yang berdedikasi tinggi...</p>
+        </section>
+
+        <!-- Project Section -->
+        <section id="project">
+            <h2 class="section-title">My Projects</h2>
+            <div class="grid-container">
+                <div class="card"><h3>Project 1</h3><p>Deskripsi singkat proyek.</p></div>
+                <div class="card"><h3>Project 2</h3><p>Deskripsi singkat proyek.</p></div>
+            </div>
+        </section>
+
+        <!-- Certificate Section -->
+        <section id="certificate">
+            <h2 class="section-title">Certificates</h2>
+            <div class="grid-container">
+                <img src="https://via.placeholder.com" alt="Sertifikat 1" class="img-item">
+                <img src="https://via.placeholder.com" alt="Sertifikat 2" class="img-item">
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery">
+            <h2 class="section-title">Gallery</h2>
+            <div class="grid-container">
+                <img src="https://via.placeholder.com" alt="Foto 1" class="img-item rounded">
+                <img src="https://via.placeholder.com" alt="Foto 2" class="img-item rounded">
+                <img src="https://via.placeholder.com" alt="Foto 3" class="img-item rounded">
+            </div>
+        </section>
 
         <!-- Contact Section -->
         <section id="contact">
-            <h1>Get In Touch</h1>
+            <h2 class="section-title">Contact</h2>
             <div class="social-container">
-                <div class="social-card" onclick="openSocial('instagram')">
-                    <i class="fab fa-instagram"></i>
-                    <span>Instagram</span>
-                </div>
-                <div class="social-card" onclick="openSocial('tiktok')">
-                    <i class="fab fa-tiktok"></i>
-                    <span>TikTok</span>
-                </div>
-                <div class="social-card" onclick="openSocial('facebook')">
-                    <i class="fab fa-facebook"></i>
-                    <span>Facebook</span>
-                </div>
-                <div class="social-card" onclick="openSocial('whatsapp')">
-                    <i class="fab fa-whatsapp"></i>
-                    <span>WhatsApp</span>
-                </div>
+                <div class="social-card" onclick="openSocial('instagram')"><i class="fab fa-instagram"></i><span>Instagram</span></div>
+                <div class="social-card" onclick="openSocial('tiktok')"><i class="fab fa-tiktok"></i><span>TikTok</span></div>
+                <div class="social-card" onclick="openSocial('facebook')"><i class="fab fa-facebook"></i><span>Facebook</span></div>
+                <div class="social-card" onclick="openSocial('whatsapp')"><i class="fab fa-whatsapp"></i><span>WhatsApp</span></div>
             </div>
         </section>
     </main>
@@ -69,4 +90,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
