@@ -109,6 +109,56 @@ section {
     box-shadow: 0 0 20px rgba(56, 189, 248, 0.3);
 }
 
+/* Gaya Teks Deskripsi (Rapat & Abu-abu) */
+.hero-desc {
+    color: #94a3b8;
+    max-width: 600px;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin: 0 auto 30px auto; /* Tengah secara horizontal */
+}
+
+/* Tombol Capsule / Pill Style (Persis Gambar) */
+.cta-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.btn-pill {
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: 50px; /* Membuat bentuk kapsul */
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    
+    /* Warna Dasar Tombol (Gelap Transparan) */
+    background: rgba(255, 255, 255, 0.05);
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.btn-pill:hover {
+    background: rgba(168, 85, 247, 0.2); /* Efek Ungu Tipis saat Hover */
+    border-color: #a855f7;
+    transform: translateY(-2px);
+}
+
+/* Penyesuaian Heading agar lebih besar */
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    letter-spacing: -1px;
+}
+
+/* Memastikan About Me tetap rapi */
+.about-card {
+    margin-top: 50px;
+}
+
 #typing {
     color: #38bdf8;
     border-right: 3px solid #38bdf8;
