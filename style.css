@@ -283,7 +283,7 @@ h1 {
 .project-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Membuat 3 kolom sama lebar */
-    gap: 25px; /* Jarak antar kotak */
+    gap: 20px; /* Jarak antar kotak */
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -345,9 +345,9 @@ h1 {
 }
 
 /* Responsif Mobile (Jadi 1 atau 2 kolom di layar kecil) */
-@media (max-width: 992px) {
+@media (max-width: 900px) {
     .project-grid {
-        grid-template-columns: repeat(2, 1fr); /* 2 kolom di tablet */
+        grid-template-columns: repeat(3, 1fr); /* 2 kolom di tablet */
     }
 }
 
