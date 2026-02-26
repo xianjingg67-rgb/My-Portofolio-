@@ -552,7 +552,7 @@ h1 {
 }
 
 /* ================= FOOTER ================= */
-footer {
+.footer {
     text-align: center;
     padding: 40px;
     border-top: 1px solid var(--border-glass);
