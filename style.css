@@ -550,11 +550,3 @@ h1 {
     color: #ffffff;
     text-shadow: 0 0 10px #ff0050;
 }
-
-/* ================= FOOTER ================= */
-.footer {
-    text-align: center;
-    padding: 40px;
-    border-top: 1px solid var(--border-glass);
-    background: rgba(0,0,0,0.3);
-}
