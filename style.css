@@ -74,7 +74,7 @@ nav {
 
 .nav-socials a {
     color: #94a3b8; /* Warna abu-abu elegan */
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     transition: 0.3s ease;
     text-decoration: none;
 }
@@ -99,7 +99,7 @@ section {
 }
 
 .title {
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: #38bdf8;
     margin-bottom: 30px;
     text-align: center;
