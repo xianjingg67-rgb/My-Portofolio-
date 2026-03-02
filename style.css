@@ -68,7 +68,7 @@ nav {
 /* Container Ikon Sosial Media di Nav */
 .nav-socials {
     display: flex;
-    gap: 18px; /* Jarak antar ikon */
+    gap: 16px; /* Jarak antar ikon */
     align-items: center;
 }
 
