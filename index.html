@@ -127,7 +127,7 @@ Actively involved in organizations while mastering the art of Video Editing, Pho
     <h2 class="section-title">My Creative Project</h2>
     <div class="project-grid">
         <!-- Project 1 -->
-        <div class="project-item">
+        <div class="project-item" data-aos="fade-up" data-aos-delay="100">
             <img src="mt1.jpg" alt="Project 1">
             <div class="project-info">
                 <h3>Mt. Arjuno</h3>
@@ -236,5 +236,17 @@ Actively involved in organizations while mastering the art of Video Editing, Pho
     </main>
 
     <script src="script.js"></script>
+        <!-- Script AOS JS -->
+    <script src="https://unpkg.com"></script>
+    <script>
+      AOS.init({
+        duration: 1000, // Kecepatan animasi (1 detik)
+        once: false,    // Set ke true jika ingin animasi hanya muncul sekali saja
+        mirror: true    // Animasi akan muncul lagi saat scroll ke atas
+      });
+    </script>
+</body>
+</html>
+
 </body>
 </html>
